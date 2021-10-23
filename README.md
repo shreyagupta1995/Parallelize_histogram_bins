@@ -1,4 +1,4 @@
-# Parallel program to segregate floating point numbers in range[0, 20] into their histogram bins 
+#### Multithreaded program to segregate floating point numbers in into histogram bins 
 
-
-RUN g++ -fopenmp -Wall -std=c++11 -o histogram sg6606.cpp
+RUN ./randomFloatGenerator <filename> <n> to generate a file with n random floating points
+RUN ./histogram <binCount> <threadCount> <filename> to create binCount number of bins using threadCount number of threads
